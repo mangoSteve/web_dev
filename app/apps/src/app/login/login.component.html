@@ -1,6 +1,6 @@
 <div class = "background" style = "width:100%;background-repeat: no-repeat;background-size: cover;background-image:url(assets/image/img.png);background-size: cover;">
   <form #formRef="ngForm" (ngSubmit)="onSubmit(formRef.value)">
-    <!-- <fieldset ngModelGroup="login"> -->
+    <fieldset ngModelGroup="login" style = "height: 530px;">
       <h2>Login</h2>
       <div class = "user_name">
         <label class ="mark">Username: </label>
@@ -21,6 +21,6 @@
       <div class = "login">
         <button type="submit">Login</button>
       </div>
-    <!-- </fieldset> -->
+    </fieldset>
   </form>
 </div>

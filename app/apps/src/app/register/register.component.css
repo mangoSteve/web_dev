@@ -36,7 +36,13 @@ label {
   .user_password{
     text-align: center;
   }
-  .login{
+  .user_position{
+    text-align: center;
+  }
+  .user_department{
+    text-align: center;
+  }
+  .register{
     text-align: center;
   }
   
