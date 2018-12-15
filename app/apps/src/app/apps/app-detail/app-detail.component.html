@@ -1,19 +1,25 @@
 <div *ngIf="app">
-  <h3>{{ app.id}}.{{ app.name }}</h3>
+  <h3>{{ app.id}}.{{ app.statusUpdateTime }}</h3>
   <div class="items">
-    <label>Id: </label>{{ app.id }}
+    <label>From: </label>{{ app.fromId }}
   </div>
   <div class="items">
-    <label>Name: </label>{{ app.name }}
+    <label>To: </label>{{ app.toId }}
   </div>
   <div class="items">
-    <label>Gender: </label>{{ app.gender }}
+    <label>Status: </label>{{ app.status }}
   </div>
   <div class="items">
-    <label>Desc: </label>{{ app.desc }}
+    <label>Type: </label>{{ app.type }}
+  </div>
+  <div class="items">
+    <label>Amount: </label>{{ app.amount }}
+  </div>
+  <div class="items">
+    <label>Reason: </label>{{ app.reason }}
   </div>
   <div class="items" *ngIf="user">
-    <label>Owner: </label>{{ user.name }}
+    <label>Under Duty: </label>{{ user.name }}
   </div>
 </div>
 <div>

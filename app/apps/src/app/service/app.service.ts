@@ -41,9 +41,9 @@ export class AppService {
       .catch(this.handleError);
   }
 
-  //按ownerId查询App
-  getAppsByOwnerId(ownerId: number): Promise<Application[]> {
-    const url = `${this.api_url}/?ownerId=${ownerId}`;
+  //按接收者的 Id 查询 App
+  getAppsByToId(toId: number): Promise<Application[]> {
+    const url = `${this.api_url}/?toId=${toId}`;
     return this.http.get(url, { headers: this.headers })
       .toPromise()
       .then(res => res.json() as Application[])

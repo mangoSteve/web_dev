@@ -1,46 +1,56 @@
 {
-  "User": [
+  "users": [
     {
       "id": 1,
       "username": "Zhang San",
       "position": "department chairman",
       "department": "diplomacy",
-      "password":"123456"
+      "password": "123456"
     },
     {
       "id": 2,
       "username": "Li Si",
       "position": "department minister",
       "department": "propoganda",
-      "password":"123456"
+      "password": "123456"
     },
     {
       "id": 3,
       "username": "Wang Wu",
       "position": "department secretary",
       "department": "activity",
-      "password":"123456"
+      "password": "123456"
     },
     {
       "id": 4,
       "username": "Zhao Liu",
       "position": "community chairman",
       "department": "all",
-      "password":"123456"
+      "password": "123456"
     },
     {
       "id": 5,
       "username": "Zhang Yi",
       "position": "teacher",
       "department": "all",
-      "password":"123456"
+      "password": "123456"
+    },
+    {
+      "username": "Zhang San",
+      "password": "123456",
+      "id": 6
+    },
+    {
+      "username": "Zhang San",
+      "password": "123456",
+      "id": 7
     }
   ],
-  "Application": [
+  "apps": [
     {
       "id": 1,
       "appTime": "14/12/2018",
-      "amount": 100.00,
+      "amount": 100,
       "reason": "Buy a lap-top",
       "fromId": 1,
       "toId": 4,
@@ -52,7 +62,7 @@
     {
       "id": 2,
       "appTime": "13/12/2018",
-      "amount": 0.50,
+      "amount": 0.5,
       "reason": "Buy a xiaobuding",
       "fromId": 3,
       "toId": 2,
@@ -64,7 +74,7 @@
     {
       "id": 3,
       "appTime": "14/12/2018",
-      "amount": 1.00,
+      "amount": 1,
       "reason": "rent a cafeteria",
       "fromId": 3,
       "toId": 2,
