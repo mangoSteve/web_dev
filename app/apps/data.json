@@ -35,6 +35,7 @@
       "position": "teacher",
       "department": "all",
       "password": "123456"
+<<<<<<< HEAD
     },
     {
       "username": "Zhang San",
@@ -45,6 +46,8 @@
       "username": "Zhang San",
       "password": "123456",
       "id": 7
+=======
+>>>>>>> b13eef90eb841a90e5cd63e3f7619b6a6e32854c
     }
   ],
   "application": [
@@ -53,10 +56,10 @@
       "appTime": "14/12/2018",
       "amount": 100,
       "reason": "Buy a lap-top",
-      "fromId": 1,
-      "toId": 4,
+      "fromId": "Zhang San",
+      "toId": "4",
       "type": "property",
-      "status": "approved",
+      "status": "Rejected",
       "statusUpdateTime": "14/12/2018",
       "comment": "good reason"
     },
@@ -65,8 +68,8 @@
       "appTime": "13/12/2018",
       "amount": 0.5,
       "reason": "Buy a xiaobuding",
-      "fromId": 3,
-      "toId": 2,
+      "fromId": "Wang Wu",
+      "toId": "2",
       "type": "labour",
       "status": "refused",
       "statusUpdateTime": "13/12/2018",
@@ -75,14 +78,26 @@
     {
       "id": 3,
       "appTime": "14/12/2018",
-      "amount": 1,
+      "amount": "1",
       "reason": "rent a cafeteria",
-      "fromId": 3,
-      "toId": 2,
+      "fromId": "Wang Wu",
+      "toId": "2",
       "type": "place",
       "status": "undetermined",
       "statusUpdateTime": "12/12/2018",
       "comment": "None"
+    },
+    {
+      "id": 4,
+      "appTime": "15/12/2018",
+      "amount": 1000,
+      "reason": "Buy a mouse",
+      "fromId": "Zhang San",
+      "toId": "4",
+      "type": "property",
+      "status": "approved",
+      "statusUpdateTime": "15/12/2018",
+      "comment": "good reason"
     }
   ]
 }

@@ -1,10 +1,3 @@
-// export class app {
-//     id: number;
-//     name: string;
-//     desc: string;
-//     ownerId: number;
-// }
-
 export class Application {
     id: number;
     appTime: string;
@@ -17,6 +10,6 @@ export class Application {
     statusUpdateTime: string;
 
     comment: string;
-    fromId: number;
-    toId: number;
+    from: string;
+    toId: string;
 }
