@@ -21,8 +21,8 @@ import { Application } from '../../domain/application';
 export class NewAppDetailComponent implements OnInit {
 
   app: Application;
-  appGenders: string[] = ['MALE', 'FEMALE', 'OTHER'];
-  
+  appStatus: string[] = ['Approved', 'Rejected', 'Waiting'];
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,

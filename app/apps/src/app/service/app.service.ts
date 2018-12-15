@@ -70,7 +70,7 @@ export class AppService {
 
   //按name与userId新建App
   createApp(appTime: string, amount: number, reason: string, type: string, 
-    status: string, statusUpdateTime: string, comment: string, fromId: number, toId: number): Promise<Application> {
+    status: string, statusUpdateTime: string, comment: string, from: string, toId: number): Promise<Application> {
     let app = {
       appTime: appTime,
       amount: amount,
@@ -82,7 +82,7 @@ export class AppService {
       statusUpdateTime: statusUpdateTime,
 
       comment: comment,
-      fromId: fromId,
+      from: from,
       toId: toId
     }
     const url = `${this.api_url}`;
