@@ -1,6 +1,15 @@
-<nav>
-  <a routerLink="/profile-detail" routerLinkActive="active" id="ProfileDetail">ProfileDetail</a>
-</nav>
+<div *ngIf="user">
+  <h3> ID: {{user.id}} </h3>
+  <h3> Username: {{user.username}} </h3>
+  <h3> Name: {{user.name}} </h3>
+  <div class = "items">
+    <label>Name:</label>
+    <input [(ngModel)]="user.name" placeholder="Name" />
+  </div>
+  <button (click)="save()" class="detail">Save</button>
+</div>
+
+<button (click)="logout()" id="Logout">Logout</button>
 
 <div>
   <router-outlet></router-outlet>
