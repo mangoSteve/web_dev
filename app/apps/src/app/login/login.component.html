@@ -1,20 +1,26 @@
 <br>
 <div>
   <form #formRef="ngForm" (ngSubmit)="onSubmit(formRef.value)">
-    <fieldset ngModelGroup="login">
-      <div>
+    <!-- <fieldset ngModelGroup="login"> -->
+      <body>
+      <h2>Login</h2>
+      <div class = "username">
         <label class ="mark">Username: </label>
-        <input name="username" type="text" [(ngModel)]="username" #usernameRef="ngModel" required minlength="3">
-        <label *ngIf="usernameRef.errors?.required">this is required</label>
+        <input name="username" type="text" [(ngModel)]="username" #usernameRef="ngModel" required minlength="3" placeholder="User Name">
+        <!-- <label *ngIf="usernameRef.errors?.required">this is required</label>
         <label *ngIf="usernameRef.errors?.minlength">should be at least 3 charactors</label>
-        <label *ngIf="auth?.hasError">{{auth.errMsg}}</label>
+        <label *ngIf="auth?.hasError">{{auth.errMsg}}</label> -->
       </div>
-      <div>
+      <div class = "userpassword">
         <label class ="mark">Password: </label>
-        <input name="password" type="password" [(ngModel)]="password" #passwordRef="ngModel" required>
-        <label *ngIf="passwordRef.errors?.required">this is required</label>
+        <input name="password" type="password" [(ngModel)]="password" #passwordRef="ngModel" required placeholder="Password">
+        <!-- <label *ngIf="passwordRef.errors?.required">this is required</label> -->
+        <!-- <label>this is required</label> -->
       </div>
-      <button type="submit">Login</button>
-    </fieldset>
+      <div class = "login">
+        <button type="submit">Login</button>
+      </div>
+      </body>
+    <!-- </fieldset> -->
   </form>
 </div>

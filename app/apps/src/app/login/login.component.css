@@ -5,14 +5,47 @@ label {
   color: #607D8B;
   font-weight: bold;
 }
+h2{
+  /* 设置边框 */
+  border: 3px solid white;
+  /* 文本居中  */
+  text-align: center;
+  /* 设置字体属性 */
+  font-family: Arial;
+  font-weight: bold;
+  font-size:40px;
+  color: #369;
+}
+body {
+  /* 背景图垂直、水平均居中、不平铺 */
+  background: url(/assets/photo/bachground.jpg)  no-repeat center center;
+  /* 让背景图基于容器大小伸缩 */
+  background-size:cover;
+  /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
+  background-attachment:fixed;
+  /* 设置背景颜色，背景图加载过程中会显示背景色 */
+  background-color:#CCCCCC;
+}
 
 .mark{
     display: inline-block;
     width: 6em;
     margin: .5em 0;
-    color: #607D8B;
+    color: #369;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
     font-weight: bold;
 }
+.username{
+  text-align: center;
+}
+.userpassword{
+  text-align: center;
+}
+.login{
+  text-align: center;
+}
+
 input {
   height: 2em;
   font-size: 1em;
@@ -24,7 +57,7 @@ button {
   font-family: Arial;
   background-color: #eee;
   border: none;
-  padding: 5px 10px;
+  padding: 10px 15px;
   border-radius: 4px;
   cursor: pointer;
   cursor: hand;
@@ -39,4 +72,5 @@ button:disabled {
   color: #ccc;
   cursor: auto;
 }
+
 
