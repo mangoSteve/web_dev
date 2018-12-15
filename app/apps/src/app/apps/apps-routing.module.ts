@@ -6,7 +6,9 @@ import { AppsComponent }      from './apps.component';
 import { AppListComponent }      from './app-list/app-list.component';
 import { AppDetailComponent }  from './app-detail/app-detail.component';
 import { MyAppListComponent } from './my-app-list/my-app-list.component';
-import { MyAppDetailComponent} from './my-app-detail/my-app-detail.component';
+import { MyAppDetailComponent } from './my-app-detail/my-app-detail.component';
+import { NewAppListComponent } from './new-app-list/new-app-list.component';
+import { NewAppDetailComponent } from './new-app-detail/new-app-detail.component';
 
 const routes: Routes = [
     {
@@ -30,11 +32,11 @@ const routes: Routes = [
             },
             {
                 path: 'newapps',
-                component: MyAppListComponent
+                component: NewAppListComponent
             },
             {
                 path: 'newapps/:id',
-                component: MyAppDetailComponent
+                component: NewAppDetailComponent
             }
         ]
     }

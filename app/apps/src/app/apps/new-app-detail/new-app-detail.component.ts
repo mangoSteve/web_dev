@@ -13,12 +13,12 @@ import { AppService } from '../../service/app.service';
 import { Application } from '../../domain/application';
 
 @Component({
-  selector: 'app-my-app-detail',
-  templateUrl: './my-app-detail.component.html',
-  styleUrls: ['./my-app-detail.component.css'],
+  selector: 'app-new-app-detail',
+  templateUrl: './new-app-detail.component.html',
+  styleUrls: ['./new-app-detail.component.css'],
   providers: [AppService]
 })
-export class MyAppDetailComponent implements OnInit {
+export class NewAppDetailComponent implements OnInit {
 
   app: Application;
   appGenders: string[] = ['MALE', 'FEMALE', 'OTHER'];

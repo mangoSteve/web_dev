@@ -8,6 +8,8 @@ import { AppsRoutingModule } from './apps-routing.module';
 import { AppService } from '../service/app.service';
 import { MyAppListComponent } from './my-app-list/my-app-list.component';
 import { MyAppDetailComponent } from './my-app-detail/my-app-detail.component';
+import { NewAppListComponent } from './new-app-list/new-app-list.component';
+import { NewAppDetailComponent } from './new-app-detail/new-app-detail.component';
 import { AppsComponent } from './apps.component';
 import { AppSearchComponent } from './app-search/app-search.component';
  
@@ -22,6 +24,8 @@ import { AppSearchComponent } from './app-search/app-search.component';
     AppDetailComponent,
     MyAppListComponent,
     MyAppDetailComponent,
+    NewAppListComponent,
+    NewAppDetailComponent,
     AppsComponent,
     AppSearchComponent
   ],
