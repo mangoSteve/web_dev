@@ -10,6 +10,6 @@ export class Application {
     statusUpdateTime: string;
 
     comment: string;
-    fromId: string;
+    from: string;
     toId: string;
 }
