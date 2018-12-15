@@ -60,7 +60,7 @@ export class NewAppListComponent implements OnInit {
     var appTime = dd + '/' + mm + '/' + yyyy;
     var statusUpdateTime = appTime
 
-    console.log(toId);
+    console.log(this.userService.getUserByUsername(toName));
     
     this.appService.createApp(appTime, amount, reason, type, status = "waiting", statusUpdateTime, comment = " ", this.myName, toId)
       .then(app => {
