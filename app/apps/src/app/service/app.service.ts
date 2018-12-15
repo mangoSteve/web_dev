@@ -12,6 +12,7 @@ import { ApiService } from './api.service';
 
 //import class
 import { Application } from '../domain/application';
+import { stringify } from '@angular/core/src/util';
 
 @Injectable()
 export class AppService {
@@ -68,10 +69,21 @@ export class AppService {
   }
 
   //按name与userId新建App
-  createAppByNameUserId(name: string, ownerId: number): Promise<Application> {
+  createAppByNameUserId(appTime: string, amount: number, reason: string, type: string, 
+    status: string, statusUpdateTime: string, comment: string, fromId: number, toId: number): Promise<Application> {
     let app = {
-      name: name,
-      ownerId: ownerId
+      appTime: appTime,
+      amount: amount,
+
+      reason: reason,
+      type: type,
+
+      status: status,
+      statusUpdateTime: statusUpdateTime,
+
+      comment: comment,
+      fromId: fromId,
+      toId: toId
     }
     const url = `${this.api_url}`;
     return this.http

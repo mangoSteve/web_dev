@@ -35,15 +35,15 @@ export class MyAppListComponent implements OnInit {
       .then(apps => this.apps = apps);
   }
 
-  addApp(name: string): void {
-    name = name.trim();
-    if (!name) { return; }
-    this.appService.createAppByNameUserId(name,this.myId)
-      .then(app => {
-        this.apps.push(app);
-        this.selectedApp = null;
-      });
-  }
+  // addApp(name: string): void {
+  //   name = name.trim();
+  //   if (!name) { return; }
+  //   this.appService.createAppByNameUserId(name,this.myId)
+  //     .then(app => {
+  //       this.apps.push(app);
+  //       this.selectedApp = null;
+  //     });
+  // }
 
   deleteApp(app: Application): void {
     this.appService
