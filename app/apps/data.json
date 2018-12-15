@@ -35,12 +35,8 @@
       "position": "teacher",
       "department": "all",
       "password": "123456"
-    },
-    {
-      "username": "user67",
-      "password": "123456",
-      "id": 6
     }
+
   ],
   "application": [
     {
@@ -48,8 +44,8 @@
       "appTime": "14/12/2018",
       "amount": 100,
       "reason": "Buy a lap-top",
-      "fromId": 1,
-      "toId": 4,
+      "fromId": "1",
+      "toId": "4",
       "type": "property",
       "status": "approved",
       "statusUpdateTime": "14/12/2018",
@@ -60,8 +56,8 @@
       "appTime": "13/12/2018",
       "amount": 0.5,
       "reason": "Buy a xiaobuding",
-      "fromId": 3,
-      "toId": 2,
+      "fromId": "3",
+      "toId": "2",
       "type": "labour",
       "status": "refused",
       "statusUpdateTime": "13/12/2018",
@@ -70,10 +66,10 @@
     {
       "id": 3,
       "appTime": "14/12/2018",
-      "amount": 1,
+      "amount": "1",
       "reason": "rent a cafeteria",
-      "fromId": 3,
-      "toId": 2,
+      "fromId": "3",
+      "toId": "2",
       "type": "place",
       "status": "undetermined",
       "statusUpdateTime": "12/12/2018",
