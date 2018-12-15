@@ -1,10 +1,20 @@
 <div *ngIf="user">
   <h3> ID: {{user.id}} </h3>
   <h3> Username: {{user.username}} </h3>
-  <h3> Name: {{user.name}} </h3>
+  <h3> Position: {{user.position}} </h3>
+  <h3> Department: {{user.department}} </h3>
+  <h3> Password: {{user.password}} </h3>
   <div class = "items">
-    <label>Name:</label>
-    <input [(ngModel)]="user.name" placeholder="Name" />
+    <label>Position:</label>
+    <input [(ngModel)]="user.position" placeholder="Position" />
+  </div>
+  <div class = "items">
+    <label>Department:</label>
+    <input [(ngModel)]="user.department" placeholder="Department" />
+  </div>
+  <div class = "items">
+    <label>Password:</label>
+    <input [(ngModel)]="user.password" placeholder="Password" />
   </div>
   <button (click)="save()" class="detail">Save</button>
 </div>

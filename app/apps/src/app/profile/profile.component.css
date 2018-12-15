@@ -17,9 +17,11 @@ label {
 }
 
 input {
-  height: 2em;
+  height: 1.7em;
   font-size: 1em;
   padding-left: .4em;
+  position:absolute;
+  left:120px;
 }
 
 button {

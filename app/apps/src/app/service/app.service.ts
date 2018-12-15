@@ -20,7 +20,7 @@ export class AppService {
   private headers : Headers ;
 
   constructor(private http: Http, private apiService: ApiService) {
-      this.api_url = apiService.getUrl() + '/apps';
+      this.api_url = apiService.getUrl() + '/application';
       this.headers = apiService.getHeaders();
   }
 

@@ -5,7 +5,7 @@
       "username": "Zhang San",
       "position": "department chairman",
       "department": "diplomacy",
-      "password": "123456",
+      "password": "234567",
       "name": "ZhangSigou"
     },
     {
@@ -37,12 +37,17 @@
       "password": "123456"
     },
     {
-      "username": "user67",
+      "username": "Zhang San",
       "password": "123456",
       "id": 6
+    },
+    {
+      "username": "Zhang San",
+      "password": "123456",
+      "id": 7
     }
   ],
-  "Application": [
+  "application": [
     {
       "id": 1,
       "appTime": "14/12/2018",
