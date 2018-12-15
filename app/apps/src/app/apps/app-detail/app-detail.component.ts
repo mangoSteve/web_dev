@@ -33,6 +33,7 @@ export class AppDetailComponent implements OnInit {
 
   ngOnInit(): void {
     this.route.params
+      // get application form by its id
       .switchMap((params: Params) => this.appService.getAppById(+params['id']))
       .subscribe(app => {
         this.app = app;
