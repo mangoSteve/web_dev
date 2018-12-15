@@ -4,6 +4,6 @@
   <li *ngFor="let app of apps"
     [class.selected]="isSelected(app)"
     (click)="onSelect(app)">
-    <span class="badge">{{ app.id }}</span> {{ app.name }}
+    <span class="badge">{{ app.id }}</span> {{ app.reason }}
   </li>
 </ul>
