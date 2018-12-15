@@ -1,14 +1,17 @@
 <h2>Applications to Review</h2>
 <div>
-  <label>app name:</label> <input #appName />
-  <button (click)="addApp(appName.value); appName.value=''">
+  <!-- <label>Application ID:</label> <input #appName /> -->
+  <!-- <button (click)="addApp(appName.value); appName.value=''">
     Add
-  </button>
+  </button> -->
 </div>
 <ul class="apps">
   <li *ngFor="let app of apps" (click)="onSelect(app)" [class.selected]="app === selectedApp">
     <span class="badge">{{app.id}}</span>
-    <span>{{app.name}}</span>
+    <span>{{app.status}}</span>
+    <span>{{app.statusUpdateTime}}</span>
+    <button class="modify" (click)="modifyApp(app); $event.stopPropagation()">x</button>
     <button class="delete" (click)="deleteApp(app); $event.stopPropagation()">x</button>
+    <!-- ???? -->
   </li>
 </ul>
