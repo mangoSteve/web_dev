@@ -30,8 +30,8 @@ export class MyAppListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.myId = <number><any>localStorage.getItem('userId');
-    this.appService.getAppsByOwnerId(this.myId)
+    this.myId = <number><any>localStorage.getItem('id');
+    this.appService.getAppsByToId(this.myId)
       .then(apps => this.apps = apps);
   }
 
