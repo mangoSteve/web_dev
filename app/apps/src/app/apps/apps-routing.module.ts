@@ -27,6 +27,14 @@ const routes: Routes = [
             {
                 path:'myapp/:id',
                 component: MyAppDetailComponent
+            },
+            {
+                path: 'newapps',
+                component: MyAppListComponent
+            },
+            {
+                path: 'newapps/:id',
+                component: MyAppDetailComponent
             }
         ]
     }
