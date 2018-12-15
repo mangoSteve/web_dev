@@ -11,5 +11,5 @@ export class Application {
 
     comment: string;
     from: string;
-    toId: string;
+    toId: number;
 }
