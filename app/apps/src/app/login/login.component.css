@@ -13,33 +13,33 @@ h2{
   /* 设置字体属性 */
   font-family: Arial;
   font-weight: bold;
-  font-size:40px;
+  font-size:60px;
   color: #369;
 }
-body {
-  /* 背景图垂直、水平均居中、不平铺 */
-  background: url(/assets/photo/bachground.jpg)  no-repeat center center;
-  /* 让背景图基于容器大小伸缩 */
-  background-size:cover;
-  /* 当内容高度大于图片高度时，背景图像的位置相对于viewport固定 */
-  background-attachment:fixed;
-  /* 设置背景颜色，背景图加载过程中会显示背景色 */
-  background-color:#CCCCCC;
-}
 
-.mark{
-    display: inline-block;
-    width: 6em;
-    margin: .5em 0;
-    color: #369;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 150%;
-    font-weight: bold;
+.background{
+  width: 100%;
+  height: 550px;
 }
-.username{
+.mark{
+  display: inline-block;
+  width: 6em;
+  margin: .5em 0;
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 150%;
+  font-weight: bold;
+}
+.user_name{
   text-align: center;
 }
-.userpassword{
+.prompt_message{
+  text-align: center;
+  position:relative; 
+  left:40px;
+  height:50px;
+}
+.user_password{
   text-align: center;
 }
 .login{
