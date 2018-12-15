@@ -1,0 +1,12 @@
+<div>
+  <h2>Register</h2>
+  <div>
+    <label class="mark">username: </label>
+    <input [(ngModel)]="user.username" placeholder="username" />
+  </div>
+  <div>
+    <label class="mark">password: </label>
+    <input type="password" [(ngModel)]="user.password" placeholder="password" />
+  </div>
+  <button (click)="onSubmit()">Submit</button>
+</div>

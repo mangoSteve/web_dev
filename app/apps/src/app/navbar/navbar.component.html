@@ -1,0 +1,12 @@
+<nav>
+  <a routerLink="/apps" routerLinkActive="active" id="apps">apps</a>
+  <a routerLink="/profile" routerLinkActive="active" id="Profile">Profile</a>
+  <a routerLink="/login" routerLinkActive="active" id="Login">Login</a>
+  <a routerLink="/register" routerLinkActive="active" id="Register">Register</a>
+  <button (click)="logout()" id="Logout">Logout</button>
+</nav>
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+

@@ -1,0 +1,21 @@
+<div *ngIf="app">
+  <h3>{{ app.id}}.{{ app.name }}</h3>
+  <div class="items">
+    <label>Id: </label>{{ app.id }}
+  </div>
+  <div class="items">
+    <label>Name: </label>{{ app.name }}
+  </div>
+  <div class="items">
+    <label>Gender: </label>{{ app.gender }}
+  </div>
+  <div class="items">
+    <label>Desc: </label>{{ app.desc }}
+  </div>
+  <div class="items" *ngIf="user">
+    <label>Owner: </label>{{ user.name }}
+  </div>
+</div>
+<div>
+  <button (click)="goBack()">Back</button>
+</div>

@@ -1,0 +1,72 @@
+{
+  "student": [
+    {
+      "id": 1,
+      "name": "Zhang San",
+      "position": "department chairman",
+      "department": "diplomacy"
+    },
+    {
+      "id": 2,
+      "name": "Li Si",
+      "position": "department minister",
+      "department": "propoganda"
+    },
+    {
+      "id": 3,
+      "name": "Wang Wu",
+      "position": "department secretary",
+      "department": "activity"
+    },
+    {
+      "id": 4,
+      "name": "Zhao Liu",
+      "position": "community chairman",
+      "department": "all"
+    },
+    {
+      "id": 5,
+      "name": "Zhang Yi",
+      "position": "teacher",
+      "department": "all"
+    }
+  ],
+  "application record": [
+    {
+      "id": 1,
+      "app_time": "14/12/2018",
+      "amount": 100.00,
+      "reason": "Buy a lap-top",
+      "from_id": 1,
+      "appr_id": 4,
+      "type": "property",
+      "status": "approved",
+      "status_update_time": "14/12/2018",
+      "comment": "good reason"
+    },
+    {
+      "id": 2,
+      "time": "13/12/2018",
+      "amount": 0.50,
+      "reason": "Buy a xiaobuding",
+      "from_id": 3,
+      "appr_id": 2,
+      "type": "labour",
+      "status": "refused",
+      "status_update_time": "13/12/2018",
+      "comment": "it's a waste"
+    },
+    {
+      "id": 3,
+      "time": "14/12/2018",
+      "amount": 1.00,
+      "reason": "rent a cafeteria",
+      "from_id": 3,
+      "appr_id": 2,
+      "type": "place",
+      "status": "undetermined",
+      "status_update_time": "12/12/2018",
+      "comment": "None"
+    }
+  ]
+}
