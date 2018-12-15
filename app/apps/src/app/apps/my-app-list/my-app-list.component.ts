@@ -30,20 +30,11 @@ export class MyAppListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.myId = <number><any>localStorage.getItem('id');
+    this.myId = <number><any>localStorage.getItem('userId');
+    
     this.appService.getAppsByToId(this.myId)
       .then(apps => this.apps = apps);
   }
-
-  // addApp(name: string): void {
-  //   name = name.trim();
-  //   if (!name) { return; }
-  //   this.appService.createAppByNameUserId(name,this.myId)
-  //     .then(app => {
-  //       this.apps.push(app);
-  //       this.selectedApp = null;
-  //     });
-  // }
 
   deleteApp(app: Application): void {
     this.appService

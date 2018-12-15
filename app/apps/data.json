@@ -74,6 +74,18 @@
       "status": "undetermined",
       "statusUpdateTime": "12/12/2018",
       "comment": "None"
+    },
+    {
+      "id": 4,
+      "appTime": "15/12/2018",
+      "amount": 1000,
+      "reason": "Buy a mouse",
+      "fromId": "1",
+      "toId": "4",
+      "type": "property",
+      "status": "approved",
+      "statusUpdateTime": "15/12/2018",
+      "comment": "good reason"
     }
   ]
 }

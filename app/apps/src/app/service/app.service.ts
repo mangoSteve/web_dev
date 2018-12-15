@@ -44,7 +44,7 @@ export class AppService {
 
   //按接收者的 id 查询 App
   getAppsByToId(toId: number): Promise<Application[]> {
-    const url = `${this.api_url}/${toId}`;
+    const url = `${this.api_url}/?toId=${toId}`;
     return this.http.get(url, { headers: this.headers })
       .toPromise()
       .then(res => res.json() as Application[])

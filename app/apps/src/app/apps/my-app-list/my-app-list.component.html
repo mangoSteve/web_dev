@@ -10,8 +10,6 @@
     <span class="badge">{{app.id}}</span>
     <span>{{app.status}}</span>
     <span>{{app.statusUpdateTime}}</span>
-    <button class="modify" (click)="modifyApp(app); $event.stopPropagation()">x</button>
-    <button class="delete" (click)="deleteApp(app); $event.stopPropagation()">x</button>
-    <!-- ???? -->
+    <button class="delete" (click)="deleteApp(app); $event.stopPropagation()">Delete</button>
   </li>
 </ul>
