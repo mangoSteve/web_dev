@@ -1,12 +1,14 @@
-<div>
+<div class = "background" style = "width:100%;background-repeat: no-repeat;background-size: cover;background-image:url(assets/image/img.png);background-size: cover;">
   <h2>Register</h2>
-  <div>
-    <label class="mark">username: </label>
+  <div class = "user_name">
+    <label class="mark">Username: </label>
     <input [(ngModel)]="user.username" placeholder="username" />
   </div>
-  <div>
-    <label class="mark">password: </label>
+  <div class = "user_password">
+    <label class="mark">Password: </label>
     <input type="password" [(ngModel)]="user.password" placeholder="password" />
   </div>
-  <button (click)="onSubmit()">Submit</button>
+  <div class = "login">
+    <button (click)="onSubmit()">Submit</button>
+  </div>
 </div>
