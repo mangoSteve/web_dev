@@ -35,7 +35,6 @@
       "position": "teacher",
       "department": "all",
       "password": "123456"
-<<<<<<< HEAD
     },
     {
       "username": "Zhang San",
@@ -46,8 +45,6 @@
       "username": "Zhang San",
       "password": "123456",
       "id": 7
-=======
->>>>>>> b13eef90eb841a90e5cd63e3f7619b6a6e32854c
     }
   ],
   "application": [

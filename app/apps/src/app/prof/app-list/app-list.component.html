@@ -1,0 +1,9 @@
+<h2>All Fund Applications</h2>
+<app-app-search></app-app-search>
+<ul class="apps">
+  <li *ngFor="let app of apps"
+    [class.selected]="isSelected(app)"
+    (click)="onSelect(app)">
+    <span class="badge">{{ app.id }}</span> {{ app.reason }}
+  </li>
+</ul>
