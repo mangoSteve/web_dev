@@ -1,36 +1,31 @@
 <div *ngIf="app">
   <h2>{{app.id}}. {{app.name}}</h2>
   <div class="items">
-    <label>From: </label>{{ app.fromId }} <input [(ngModel)]="app.name" placeholder="Name" />
+    <label>Update Time: </label>{{ app.statusUpdateTime }}
   </div>
   <div class="items">
-    <label>Gender:</label>
-    <select *ngIf="appGenders" [(ngModel)]="app.gender" name="gender" placeholder="gender">
-      <option *ngFor="let appGender of appGenders ">{{appGender}}</option>
+    <label>From: </label>{{ app.fromId }}
+  </div>
+  <div class="items">
+    <label>Type: </label>{{ app.type }}
+  </div>
+  <div class="items">
+    <label>Amount: </label>{{ app.amount }}
+  </div>
+  <div class="items">
+    <label>Reason: </label>{{ app.reason }}
+  </div>
+  <div class="items">
+    <label>Status:</label>
+    <select *ngIf="appStatus" [(ngModel)]="app.status" name="status" placeholder="status">
+      <option *ngFor="let appStatu of appStatus ">{{appStatu}}</option>
     </select>
   </div>
   <div class="items">
-    <label>Desc:</label>
-    <input [(ngModel)]="app.desc" placeholder="Description" />
+    <label>Comment:</label> {{ app.comment }}
+    <input [(ngModel)]="app.comment" placeholder="Comment" />
   </div>
   <button (click)="goBack()">Back</button>
   <button (click)="save()">Save</button>
 </div>
 <div class="items">
-
-</div>
-<div class="items">
-  <label>To: </label>{{ app.toId }}
-</div>
-<div class="items">
-  <label>Status: </label>{{ app.status }}
-</div>
-<div class="items">
-  <label>Type: </label>{{ app.type }}
-</div>
-<div class="items">
-  <label>Amount: </label>{{ app.amount }}
-</div>
-<div class="items">
-  <label>Reason: </label>{{ app.reason }}
-</div>
