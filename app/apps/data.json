@@ -37,17 +37,12 @@
       "password": "123456"
     },
     {
-      "username": "Zhang San",
+      "username": "user67",
       "password": "123456",
       "id": 6
-    },
-    {
-      "username": "Zhang San",
-      "password": "123456",
-      "id": 7
     }
   ],
-  "apps": [
+  "Application": [
     {
       "id": 1,
       "appTime": "14/12/2018",

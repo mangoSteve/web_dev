@@ -12,12 +12,12 @@ import { AppService } from '../../service/app.service';
 import { Application } from '../../domain/application';
 
 @Component({
-  selector: 'app-my-app-list',
-  templateUrl: './my-app-list.component.html',
-  styleUrls: ['./my-app-list.component.css'],
+  selector: 'app-new-app-list',
+  templateUrl: './new-app-list.component.html',
+  styleUrls: ['./new-app-list.component.css'],
   providers: [AppService]
 })
-export class MyAppListComponent implements OnInit {
+export class NewAppListComponent implements OnInit {
 
   myId: number;
   apps: Application[];
@@ -56,6 +56,6 @@ export class MyAppListComponent implements OnInit {
 
   onSelect(app: Application): void {
     this.selectedApp = app;
-    this.router.navigate(['/myapp', this.selectedApp.id]);
+    this.router.navigate(['/newapp', this.selectedApp.id]);
   }
 }
