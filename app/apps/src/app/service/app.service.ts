@@ -20,8 +20,8 @@ export class AppService {
   private headers : Headers ;
 
   constructor(private http: Http, private apiService: ApiService) {
-      this.api_url = apiService.getUrl() + '/apps';
-      this.headers = apiService.getHeaders();
+    this.api_url = apiService.getUrl() + '/application';
+    this.headers = apiService.getHeaders();
   }
 
   //查询所有App
@@ -33,7 +33,7 @@ export class AppService {
       .catch(this.handleError);
   }
 
-  //按id查询App
+  //按 id 查询App
   getAppById(id: number): Promise<Application> {
     const url = `${this.api_url}/${id}`;
     return this.http.get(url, { headers: this.headers })
@@ -42,7 +42,7 @@ export class AppService {
       .catch(this.handleError);
   }
 
-  //按接收者的 Id 查询 App
+  //按接收者的 id 查询 App
   getAppsByToId(toId: number): Promise<Application[]> {
     const url = `${this.api_url}/?toId=${toId}`;
     return this.http.get(url, { headers: this.headers })
@@ -59,17 +59,17 @@ export class AppService {
   }
 
   //新建App
-  createApp(app: Application): Promise<Application> {
-    const url = `${this.api_url}`;
-    return this.http
-      .post(url, JSON.stringify(app), { headers: this.headers })
-      .toPromise()
-      .then(res => res.json() as Application)
-      .catch(this.handleError);
-  }
+  // createApp(app: Application): Promise<Application> {
+  //   const url = `${this.api_url}`;
+  //   return this.http
+  //     .post(url, JSON.stringify(app), { headers: this.headers })
+  //     .toPromise()
+  //     .then(res => res.json() as Application)
+  //     .catch(this.handleError);
+  // }
 
   //按name与userId新建App
-  createAppByNameUserId(appTime: string, amount: number, reason: string, type: string, 
+  createApp(appTime: string, amount: number, reason: string, type: string, 
     status: string, statusUpdateTime: string, comment: string, fromId: number, toId: number): Promise<Application> {
     let app = {
       appTime: appTime,
