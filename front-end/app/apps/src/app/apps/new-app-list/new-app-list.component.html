@@ -1,30 +1,25 @@
 <div class="background" style="width:100%;background-repeat: no-repeat;background-size: cover;background-image:url(assets/image/img.png);background-size: cover;">
 
   <h2>New Application</h2>
-  <div class="box">
-    <form id="boxes">
-      <p class="items">
-        <label id="txt">Type: </label>
-        <input type="tpe" class="text-center" #appType />
-      </p>
-      <p class="items">
-        <label id="txt">Amount: </label>
-        <input type="tpe" class="text-center" #appAmount />
-      </p>
-      <p class="items">
-        <label id="txt">Reason: </label>
-        <input type="tpe" class="text-center" #appReason />
-      </p>
-      <p class="items">
-        <label id="txt">To:</label>
-        <input type="tpe" class="text-center" #appToName />
-      </p>
-      <p>
-        <button (click)="goBack()">Back</button>
-        <button (click)="addApp(appType.value, appAmount.value, appReason.value, appToName.value); appType.value=''">
-          Commit
-        </button>
-      </p>
-    </form>
-  </div>
+
+  <p class="items">
+    <label id="txt">Type: </label>
+    <input type="tpe" class="text-center" #appType />
+  </p>
+  <p class="items">
+    <label id="txt">Amount: </label>
+    <input type="tpe" class="text-center" #appAmount />
+  </p>
+  <p class="items">
+    <label id="txt">Reason: </label>
+    <input type="tpe" class="text-center" #appReason />
+  </p>
+  <p class="items">
+    <label id="txt">To:</label>
+    <input type="tpe" class="text-center" #appToName />
+  </p>
+  <button class="back" (click)="goBack()">Back</button>
+  <button class="commit"(click)="addApp(appType.value, appAmount.value, appReason.value, appToName.value); appType.value=''">
+    Commit
+  </button>
 </div>

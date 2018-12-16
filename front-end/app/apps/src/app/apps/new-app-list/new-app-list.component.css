@@ -6,7 +6,7 @@ h2{
   color: #369;
   border-bottom: 5px solid white
 }
-.items {
+/* .items {
   position: relative;
   left: 530px;
 }
@@ -15,7 +15,7 @@ label{
   text-align: right;
 	display: inline-block;
 	padding: 0 10px;
-	vertical-align: middle;
+	vertical-align: middle; 
 }
 input{
 	outline: none;
@@ -104,4 +104,60 @@ button.delete {
   margin-right: .8em;
   background-color: gray !important;
   color:white;
+} */ */
+.box {
+  margin: 0 auto
+}
+
+label {
+  display: inline-block;
+  width: 3em;
+  margin: .5em 0;
+  color: #607D8B;
+  font-weight: bold;
+  position:relative;
+  left:38%;
+}
+
+input {
+  height: 2em;
+  font-size: 1em;
+  padding-left: .4em;
+  position:absolute;
+  left:45%;
+}
+
+button {
+  margin-top: 20px;
+  font-family: Arial;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  cursor: hand;
+}
+
+button:hover {
+  background-color: #cfd8dc;
+}
+
+button:disabled {
+  background-color: #eee;
+  color: #ccc;
+  cursor: auto;
+}
+
+.back{
+  position:absolute;
+  left:55%;
+}
+
+.commit{
+  position:absolute;
+  left:45%;
+}
+
+.background{
+  height: 550px;
 }

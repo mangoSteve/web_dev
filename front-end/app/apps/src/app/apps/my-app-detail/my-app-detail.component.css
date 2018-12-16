@@ -1,14 +1,33 @@
-label {
+.txt {
   display: inline-block;
-  width: 4em;
+  width: 8em;
   margin: .5em 0;
   color: #607D8B;
   font-weight: bold;
+  position:relative;
+  left:38%;
+}
+h2{
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  color: #369;
+  border-bottom: 5px solid white
 }
 input {
   height: 2em;
   font-size: 1em;
   padding-left: .4em;
+  position:relative;
+  left:40%;
+}
+.info {
+  height: 2em;
+  font-size: 1em;
+  padding-left: .4em;
+  position:relative;
+  left:40%;
 }
 button {
   margin-top: 20px;
@@ -26,4 +45,15 @@ button:disabled {
   background-color: #eee;
   color: #ccc; 
   cursor: auto;
+}
+.background{
+  height: 550px;
+}
+.back{
+  position:absolute;
+  left:55%;
+}
+.save{
+  position:absolute;
+  left:45%;
 }
