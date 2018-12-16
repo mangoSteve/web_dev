@@ -1,3 +1,12 @@
+h2{
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  color: #369;
+  border-bottom: 5px solid white
+}
+
 .selected {
   background-color: #CFD8DC !important;
   color: white;
@@ -17,6 +26,8 @@
   padding: .3em 0;
   height: 1.6em;
   border-radius: 4px;
+  position: relative;
+  left: 530px;
 }
 .apps li:hover {
   color: #607D8B;

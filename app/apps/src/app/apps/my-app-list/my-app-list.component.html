@@ -1,10 +1,6 @@
+<div class="background" style="width:100%;background-repeat: no-repeat;background-size: cover;background-image:url(assets/image/img.png);background-size: cover;">
+
 <h2>Applications to Review</h2>
-<div>
-  <!-- <label>Application ID:</label> <input #appName /> -->
-  <!-- <button (click)="addApp(appName.value); appName.value=''">
-    Add
-  </button> -->
-</div>
 <ul class="apps">
   <li *ngFor="let app of apps" (click)="onSelect(app)" [class.selected]="app === selectedApp">
     <span class="badge">{{app.id}}</span>
@@ -13,3 +9,4 @@
     <button class="delete" (click)="deleteApp(app); $event.stopPropagation()">Delete</button>
   </li>
 </ul>
+</div>
