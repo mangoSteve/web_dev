@@ -1,0 +1,104 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "Zhang San",
+      "position": "department secretary",
+      "department": "diplomacy",
+      "password": "234567",
+      "name": "ZhangSigou"
+    },
+    {
+      "id": 2,
+      "username": "Li Si",
+      "position": "department minister",
+      "department": "propoganda",
+      "password": "123456"
+    },
+    {
+      "id": 3,
+      "username": "Wang Wu",
+      "position": "department secretary",
+      "department": "activity",
+      "password": "123456"
+    },
+    {
+      "id": 4,
+      "username": "Zhao Liu",
+      "position": "community chairman",
+      "department": "all",
+      "password": "123456"
+    },
+    {
+      "id": 5,
+      "username": "Zhang Yi",
+      "position": "teacher",
+      "department": "all",
+      "password": "123456"
+    },
+    {
+      "username": "Zhang San",
+      "password": "123456",
+      "id": 6
+    },
+    {
+      "username": "Zhang San",
+      "password": "123456",
+      "id": 7
+    }
+  ],
+  "application": [
+    {
+      "id": 1,
+      "appTime": "14/12/2018",
+      "amount": 100,
+      "reason": "Buy a lap-top",
+      "fromId": "Zhang San",
+      "toId": 4,
+      "type": "property",
+      "status": "Rejected",
+      "statusUpdateTime": "14/12/2018",
+      "comment": "good reason",
+      "department": "activity"
+    },
+    {
+      "id": 2,
+      "appTime": "13/12/2018",
+      "amount": 0.5,
+      "reason": "Buy a xiaobuding",
+      "fromId": "Wang Wu",
+      "toId": 2,
+      "type": "labour",
+      "status": "refused",
+      "statusUpdateTime": "13/12/2018",
+      "comment": "it's a waste",
+      "department": "activity"
+    },
+    {
+      "id": 3,
+      "appTime": "14/12/2018",
+      "amount": "1",
+      "reason": "rent a cafeteria",
+      "fromId": "Wang Wu",
+      "toId": 2,
+      "type": "place",
+      "status": "undetermined",
+      "statusUpdateTime": "12/12/2018",
+      "comment": "None",
+      "department": "activity"
+    },
+    {
+      "id": 4,
+      "appTime": "15/12/2018",
+      "amount": 1000,
+      "reason": "Buy a mouse",
+      "fromId": "Zhang San",
+      "toId": 4,
+      "type": "property",
+      "status": "approved",
+      "statusUpdateTime": "15/12/2018",
+      "comment": "good reason",
+      "department": "diplomacy"
+    }
+  ]
+}
