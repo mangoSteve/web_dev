@@ -12,6 +12,8 @@ import { UserService } from '../../service/user.service';
 
 //import class
 import { Application } from '../../domain/application';
+import { async } from 'q';
+import { User } from '../../domain/user';
 
 @Component({
   selector: 'app-new-app-list',
@@ -22,7 +24,7 @@ import { Application } from '../../domain/application';
 export class NewAppListComponent implements OnInit {
 
   myId: number;
-  myName: string;
+  user: User;
   apps: Application[];
   selectedApp: Application;
 
@@ -36,7 +38,8 @@ export class NewAppListComponent implements OnInit {
 
   ngOnInit() {
     this.myId = <number><any>localStorage.getItem('userId');
-    this.myName = this.userService.getUserById(this.myId)['name'];
+    this.userService.getUserById(this.myId)
+      .then(user => this.user = user );
     this.appService.getAppsByToId(this.myId)
       .then(apps => this.apps = apps);
   }
@@ -49,20 +52,16 @@ export class NewAppListComponent implements OnInit {
         if (this.selectedApp === app) { this.selectedApp = null; }
       });
   }
-
-  addApp(type: string, amount: number, reason: string, comment: string, toName: string): void {
-    var toId = this.userService.getUserByUsername(toName)['id'];
-    var today = new Date();
-    var dd = today.getDate();
-    var mm = today.getMonth() + 1;
-    var yyyy = today.getFullYear();
-
-    var appTime = dd + '/' + mm + '/' + yyyy;
-    var statusUpdateTime = appTime
-
-    console.log(this.userService.getUserByUsername(toName));
-    
-    this.appService.createApp(appTime, amount, reason, type, status = "waiting", statusUpdateTime, comment = " ", this.myName, toId)
+  addApp(type: string, amount: number, reason: string, toName: string) {
+    var today = new Date(),
+      dd = today.getDate(),
+      mm = today.getMonth() + 1,
+      yyyy = today.getFullYear(),
+      appTime = dd + '/' + mm + '/' + yyyy,
+      statusUpdateTime = appTime,
+      myName = this.user.username
+      
+    this.appService.createApp(appTime, amount, reason, type, status = "waiting", statusUpdateTime, " ", myName, toName, 0)
       .then(app => {
         this.apps.push(app);
         this.selectedApp = null;

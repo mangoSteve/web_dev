@@ -12,4 +12,5 @@ export class Application {
     comment: string;
     from: string;
     toId: number;
+    toName: string;
 }
