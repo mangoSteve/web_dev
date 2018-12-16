@@ -6,7 +6,6 @@ import { FormsModule }    from '@angular/forms';
 import { ProfileRoutingModule } from './profile-routing.module';
 //import my components
 import { ProfileComponent } from './profile.component';
-import { ProfileDetailComponent } from './profile-detail/profile-detail.component';
 
 @NgModule({
   imports: [
@@ -15,8 +14,7 @@ import { ProfileDetailComponent } from './profile-detail/profile-detail.componen
     FormsModule
   ],
   declarations: [
-    ProfileComponent,
-    ProfileDetailComponent
+    ProfileComponent
   ]
 })
 export class ProfileModule { }
