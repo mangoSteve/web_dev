@@ -1,0 +1,27 @@
+<div *ngIf="app">
+  <h3>{{ app.id }}.{{ app.statusUpdateTime }}</h3>
+  <div class="items">
+    <label>From: </label>{{ app.fromId }}
+  </div>
+  <div class="items">
+    <label>To: </label>{{ app.toId }}
+  </div>
+  <div class="items">
+    <label>Status: </label>{{ app.status }}
+  </div>
+  <div class="items">
+    <label>Type: </label>{{ app.type }}
+  </div>
+  <div class="items">
+    <label>Amount: </label>{{ app.amount }}
+  </div>
+  <div class="items">
+    <label>Reason: </label>{{ app.reason }}
+  </div>
+  <div class="items" *ngIf="user">
+    <label>Under Duty: </label>{{ user.name }}
+  </div>
+</div>
+<div>
+  <button (click)="goBack()">Back</button>
+</div>
