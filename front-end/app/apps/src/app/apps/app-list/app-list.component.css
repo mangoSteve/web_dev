@@ -7,10 +7,11 @@ h2{
   border-bottom: 5px solid white
 }
 .background{
+  width: 1000px;
   height: 550px;
 }
 .apps {
-  margin: 0 0 2em 0;
+  margin: 0 auto;
   list-style-type: none;
   padding: 0;
   width: 15em;
@@ -24,15 +25,11 @@ h2{
   padding: .3em 0;
   height: 1.6em;
   border-radius: 4px;
-  position: relative;
-  left: 500px;
 }
 .apps li:hover {
   color: #607D8B;
   background-color: #DDD;
   left: .1em;
-  position: relative;
-  left: 500px;
 }
 .apps .text {
   position: relative;
