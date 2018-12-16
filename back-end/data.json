@@ -86,19 +86,6 @@
       "statusUpdateTime": "12/12/2018",
       "comment": "None",
       "department": "activity"
-    },
-    {
-      "id": 4,
-      "appTime": "15/12/2018",
-      "amount": 1000,
-      "reason": "Buy a mouse",
-      "fromId": "Zhang San",
-      "toId": "4",
-      "type": "property",
-      "status": "approved",
-      "statusUpdateTime": "15/12/2018",
-      "comment": "good reason",
-      "department": "diplomacy"
     }
   ]
 }
