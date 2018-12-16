@@ -60,6 +60,15 @@ export class AppService {
       .catch(this.handleError);
   }
 
+  //按部门查询
+  getAppsByDepartment(department: string): Promise<Application[]> {
+    const url = `${this.api_url}/?toName=${department}`;
+    return this.http.get(url, { headers: this.headers })
+      .toPromise()
+      .then(res => res.json() as Application[])
+      .catch(this.handleError);
+  }
+
   //search app
   searchApp(term: string): Observable<Application[]> {
     return this.http

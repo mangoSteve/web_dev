@@ -19,6 +19,7 @@ import { Application } from '../../domain/application';
 })
 export class AppListComponent implements OnInit {
 
+  myDepartment: string;
   apps: Application[];
   selectedId : number;
 
@@ -29,8 +30,12 @@ export class AppListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.appService.getApps()
+    this.myDepartment = <string><any>localStorage.getItem('department');
+    this.appService.getAppsByDepartment(this.myDepartment)
       .then(apps => this.apps = apps);
+    // this.appService.getApps()
+    //   .then(apps => this.apps = apps);
+
   }
 
   isSelected(app: Application){

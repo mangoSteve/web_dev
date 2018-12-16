@@ -13,4 +13,7 @@ export class Application {
     from: string;
     toId: number;
     toName: string;
+
+    department: string;
 }
+
