@@ -1,5 +1,6 @@
+<div class = "background" style = "width:100%;background-repeat: no-repeat;background-size: cover;background-image:url(assets/image/img.png);background-size: cover;">
 <div *ngIf="app">
-  <h3>{{ app.id }}.{{ app.statusUpdateTime }}</h3>
+  <h3>{{ app.statusUpdateTime }}</h3>
   <div class="items">
     <label>From: </label>{{ app.fromId }}
   </div>
@@ -18,10 +19,14 @@
   <div class="items">
     <label>Reason: </label>{{ app.reason }}
   </div>
+  <div class="items">
+    <label>Department: </label>{{ app.department }}
+  </div>
   <div class="items" *ngIf="user">
-    <label>Under Duty: </label>{{ user.name }}
+    <label>Comment: </label>{{ app.comment }}
   </div>
 </div>
 <div>
   <button (click)="goBack()">Back</button>
+</div>
 </div>

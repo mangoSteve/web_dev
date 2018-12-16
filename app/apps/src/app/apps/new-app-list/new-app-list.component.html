@@ -1,35 +1,30 @@
-<h2>New Application</h2>
-  
-<div *ngIf="app">
-  <h2>{{app.id}}. {{app.name}}</h2>
-  <div class="items">
-    <label>Update Time: </label>{{ app.statusUpdateTime }}
+<div class="background" style="width:100%;background-repeat: no-repeat;background-size: cover;background-image:url(assets/image/img.png);background-size: cover;">
+
+  <h2>New Application</h2>
+  <div class="box">
+    <form id="boxes">
+      <p class="items">
+        <label id="txt">Type: </label>
+        <input type="tpe" class="text-center" #appType />
+      </p>
+      <p class="items">
+        <label id="txt">Amount: </label>
+        <input type="tpe" class="text-center" #appAmount />
+      </p>
+      <p class="items">
+        <label id="txt">Reason: </label>
+        <input type="tpe" class="text-center" #appReason />
+      </p>
+      <p class="items">
+        <label id="txt">To:</label>
+        <input type="tpe" class="text-center" #appToName />
+      </p>
+      <p>
+        <button (click)="goBack()">Back</button>
+        <button (click)="addApp(appType.value, appAmount.value, appReason.value, appToName.value); appType.value=''">
+          Commit
+        </button>
+      </p>
+    </form>
   </div>
-  <div class="items">
-    <label>From: </label>{{ app.fromId }}
-  </div>
-  <div class="items">
-    <label>Type: </label>{{ app.type }}
-  </div>
-  <div class="items">
-    <label>Amount: </label>{{ app.amount }}
-  </div>
-  <div class="items">
-    <label>Reason: </label>{{ app.reason }}
-  </div>
-  <div class="items">
-    <label>Status:</label>
-    <select *ngIf="appStatus" [(ngModel)]="app.status" name="status" placeholder="status">
-      <option *ngFor="let appStatu of appStatus ">{{appStatu}}</option>
-    </select>
-  </div>
-  <div class="items">
-    <label>Comment:</label> {{ app.comment }}
-    <input [(ngModel)]="app.comment" placeholder="Comment" />
-  </div>
-  <button (click)="goBack()">Back</button>
-  <button (click)="addApp(appName.value); appName.value=''">
-    Add
-  </button>
 </div>
-<div class="items">

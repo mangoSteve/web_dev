@@ -51,26 +51,33 @@ export class AppService {
       .catch(this.handleError);
   }
 
+  //按接收者的 名字 查询 App
+  getAppsByToName(toName: string): Promise<Application[]> {
+    const url = `${this.api_url}/?toName=${toName}`;
+    return this.http.get(url, { headers: this.headers })
+      .toPromise()
+      .then(res => res.json() as Application[])
+      .catch(this.handleError);
+  }
+
+  //按部门查询
+  getAppsByDepartment(department: string): Promise<Application[]> {
+    const url = `${this.api_url}/?toName=${department}`;
+    return this.http.get(url, { headers: this.headers })
+      .toPromise()
+      .then(res => res.json() as Application[])
+      .catch(this.handleError);
+  }
+
   //search app
   searchApp(term: string): Observable<Application[]> {
     return this.http
-      .get(`${this.api_url}?name_like=${term}`)
+      .get(`${this.api_url}?reason_like=${term}`)
       .map(response => response.json() as Application[]);
   }
-
-  //新建App
-  // createApp(app: Application): Promise<Application> {
-  //   const url = `${this.api_url}`;
-  //   return this.http
-  //     .post(url, JSON.stringify(app), { headers: this.headers })
-  //     .toPromise()
-  //     .then(res => res.json() as Application)
-  //     .catch(this.handleError);
-  // }
-
   //按name与userId新建App
   createApp(appTime: string, amount: number, reason: string, type: string, 
-    status: string, statusUpdateTime: string, comment: string, fromId: number, toId: number): Promise<Application> {
+    status: string, statusUpdateTime: string, comment: string, from: string, toName: String, toId: number): Promise<Application> {
     let app = {
       appTime: appTime,
       amount: amount,
@@ -82,7 +89,8 @@ export class AppService {
       statusUpdateTime: statusUpdateTime,
 
       comment: comment,
-      fromId: fromId,
+      from: from,
+      toName: toName,
       toId: toId
     }
     const url = `${this.api_url}`;

@@ -58,7 +58,8 @@
       "type": "property",
       "status": "Rejected",
       "statusUpdateTime": "14/12/2018",
-      "comment": "good reason"
+      "comment": "good reason",
+      "department": "activity"
     },
     {
       "id": 2,
@@ -70,7 +71,8 @@
       "type": "labour",
       "status": "refused",
       "statusUpdateTime": "13/12/2018",
-      "comment": "it's a waste"
+      "comment": "it's a waste",
+      "department": "activity"
     },
     {
       "id": 3,
@@ -82,7 +84,8 @@
       "type": "place",
       "status": "undetermined",
       "statusUpdateTime": "12/12/2018",
-      "comment": "None"
+      "comment": "None",
+      "department": "activity"
     },
     {
       "id": 4,
@@ -94,7 +97,8 @@
       "type": "property",
       "status": "approved",
       "statusUpdateTime": "15/12/2018",
-      "comment": "good reason"
+      "comment": "good reason",
+      "department": "diplomacy"
     }
   ]
 }
