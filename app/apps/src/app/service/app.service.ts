@@ -72,7 +72,7 @@ export class AppService {
   //search app
   searchApp(term: string): Observable<Application[]> {
     return this.http
-      .get(`${this.api_url}?name_like=${term}`)
+      .get(`${this.api_url}?reason_like=${term}`)
       .map(response => response.json() as Application[]);
   }
   //按name与userId新建App

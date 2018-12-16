@@ -30,7 +30,7 @@ export class AppListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.myDepartment = <string><any>localStorage.getItem('department');
+    this.myDepartment = localStorage.getItem('department');
     this.appService.getAppsByDepartment(this.myDepartment)
       .then(apps => this.apps = apps);
     // this.appService.getApps()
