@@ -1,11 +1,18 @@
-<div *ngIf="user">
-  <h3> ID: {{user.id}} </h3>
-  <h3> Username: {{user.username}} </h3>
-  <h3> Name: {{user.name}} </h3>
-  <div class = "items">
-    <label>Name:</label>
-    <input [(ngModel)]="user.name" placeholder="Name" />
+<div class="background" style="width:100%;background-repeat: no-repeat;background-size: cover;background-image:url(assets/image/img.png);background-size: cover;">
+  <div *ngIf="user">
+    <div class="titles">
+      <h3> ID: {{user.id}} </h3>
+      <h3> Username: {{user.username}} </h3>
+      <h3> Position: {{user.position}} </h3>
+      <h3> Department: {{user.department}} </h3>
+      <h3> Password: {{user.password}} </h3>
+    </div>
+    <h1></h1>
   </div>
-  <button (click)="goBack()">Back</button>
-  <button (click)="save()">Save</button>
+
+  <button (click)="logout()" id="Logout">Logout</button>
+
+  <div>
+    <router-outlet></router-outlet>
+  </div>
 </div>

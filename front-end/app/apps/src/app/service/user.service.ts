@@ -1,10 +1,13 @@
 import { Injectable } from '@angular/core';
 
 import { Http, Headers, Response } from '@angular/http';
-
+import { Observable }     from 'rxjs/Observable';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/toPromise';
 import 'rxjs/add/operator/toPromise';
 import { User } from '../domain/user';
 import { ApiService } from './api.service';
+import { stringify } from '@angular/core/src/util';
 
 @Injectable()
 export class UserService {
@@ -74,6 +77,13 @@ export class UserService {
       .toPromise()
       .then(() => null)
       .catch(this.handleError);
+  }
+
+  //search user
+  searchUser(term: string): Observable<User[]> {
+    return this.http
+      .get(`${this.api_url}?username_like=${term}`)
+      .map(response => response.json() as User[]);
   }
 
   private handleError(error: any): Promise<any> {

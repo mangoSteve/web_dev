@@ -1,13 +1,4 @@
-<nav>
-  <a routerLink="/myprofile" routerLinkActive="active" id="myprof">My Profile</a>
-  <a routerLink="/setprofile" routerLinkActive="active" id="setprof">Set Profiles</a>
-</nav>
-
-<div>
-  <router-outlet></router-outlet>
-</div>
-
-<!-- <div class="background" style="width:100%;background-repeat: no-repeat;background-size: cover;background-image:url(assets/image/img.png);background-size: cover;">
+<div class="background" style="width:100%;background-repeat: no-repeat;background-size: cover;background-image:url(assets/image/img.png);background-size: cover;">
   <div *ngIf="user">
     <div class="titles">
       <h3> ID: {{user.id}} </h3>
@@ -29,12 +20,7 @@
       <label>Password:</label>
       <input [(ngModel)]="user.password" placeholder="Password" />
     </div>
+    <h2 id="warn"></h2>
     <button (click)="save()" class="detail">Save</button>
   </div>
-
-  <button (click)="logout()" id="Logout">Logout</button>
-
-  <div>
-    <router-outlet></router-outlet>
-  </div>
-</div> -->
+</div>

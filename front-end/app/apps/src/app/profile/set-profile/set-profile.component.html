@@ -1,0 +1,17 @@
+<div id="background" style="width:100%;background-repeat: no-repeat;background-size: cover;background-image:url(assets/image/img.png);background-size: cover;">
+<div id="set-component" style="text-align:center; vertical-align:middel;">
+  <h1 id='test'></h1>
+  <br>
+  <h2>Choose a Profile to Update</h2>
+  <h4 id="warning">You cannot update someone whose position is higher than yours!</h4>
+  <div id="dropdown">
+    <input #setBox id="set-box" (keyup)="set(setBox.value)" autocomplete="off" [(ngModel)]="userName"/>
+    <div id="menu">
+      <div #chosen *ngFor="let prof of profs | async"
+           (click)="gotoUpdate(prof)" class="set-result" >
+        {{ prof.username }}
+      </div>
+    </div>
+  </div>
+</div>
+</div>
